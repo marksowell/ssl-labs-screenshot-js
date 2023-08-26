@@ -3,6 +3,8 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import ora from 'ora';
 
+const version = "1.0.1";
+
 function sanitizeAndValidateDomain(url) {
     try {
         if (!url.startsWith('http://') && !url.startsWith('https://')) {
@@ -104,14 +106,4 @@ export async function captureSSLLabsScreenshot(inputDomain) {
     } finally {
         await browser.close();
     }
-}
-
-if (import.meta.url === `file://${process.argv[1]}`) {
-    const inputDomain = process.argv[2];
-    if (!inputDomain) {
-        console.log('Usage: ssl-labs-screenshot domain.com');
-        process.exit(1);
-    }
-
-    captureSSLLabsScreenshot(inputDomain);
 }
