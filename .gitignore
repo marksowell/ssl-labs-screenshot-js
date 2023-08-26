@@ -1,0 +1,7 @@
+# Dependencies
+/node_modules
+
+# Ignoring cache directory for puppeteer
+.cache/
+
+.DS_Store
