@@ -55,7 +55,7 @@ captureSSLLabsScreenshot('example.com');
 
 ```bash
 ✔ Overall rating: A
-✔ Screenshot saved as www.sslabs.com_report.png
+✔ Screenshot saved as www.ssllabs.com_report.png
 ```
 
 ## Issues and Feedback
