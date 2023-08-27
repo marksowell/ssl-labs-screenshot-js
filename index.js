@@ -3,8 +3,6 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import ora from 'ora';
 
-const version = "1.0.1";
-
 function sanitizeAndValidateDomain(url) {
     try {
         if (!url.startsWith('http://') && !url.startsWith('https://')) {
@@ -20,6 +18,11 @@ function sanitizeAndValidateDomain(url) {
         return null;
     }
     return null;
+}
+
+function sanitizeFilename(filename) {
+    // Remove any path traversal attempts and leave only valid domain name characters.
+    return filename.replace(/(\.\.)|[^a-zA-Z0-9.-]/g, '');
 }
 
 export async function captureSSLLabsScreenshot(inputDomain) {
@@ -73,6 +76,7 @@ export async function captureSSLLabsScreenshot(inputDomain) {
         }
 
         await page.waitForSelector('#rating', { timeout: 440000 });
+        await new Promise(r => setTimeout(r, 5000));
 
         let grade;
         try {
@@ -99,8 +103,9 @@ export async function captureSSLLabsScreenshot(inputDomain) {
         const pageBox = await element.boundingBox();
         const screenshotBuffer = await page.screenshot({ clip: pageBox });
 
-        fs.writeFileSync(`${domain}_report.png`, screenshotBuffer);
-        spinner.succeed(`Screenshot saved as ${domain}_report.png`);
+        const safeDomain = sanitizeFilename(domain);
+        fs.writeFileSync(`${safeDomain}_report.png`, screenshotBuffer);
+        spinner.succeed(`Screenshot saved as ${safeDomain}_report.png`);
     } catch (error) {
         spinner.fail(`An error occurred: ${error.message}`);
     } finally {
