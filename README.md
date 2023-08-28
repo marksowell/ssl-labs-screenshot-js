@@ -1,5 +1,9 @@
 # SSL Labs Screenshot
 
+[![npm version](https://badge.fury.io/js/ssl-labs-screenshot.svg)](https://badge.fury.io/js/ssl-labs-screenshot)
+[![Known Vulnerabilities](https://snyk.io/test/github/marksowell/ssl-labs-screenshot-js/badge.svg)](https://snyk.io/test/github/marksowell/ssl-labs-screenshot-js)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarksowell%2Fssl-labs-screenshot-js.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarksowell%2Fssl-labs-screenshot-js?ref=badge_shield)
+
 Capture a trimmed screenshot of the SSL Labs report for a given domain.
 
 <p align="center"><img src="https://raw.githubusercontent.com/marksowell/ssl-labs-screenshot-js/main/images/www.ssllabs.com_report.png" width="300px" />
@@ -65,3 +69,5 @@ For any issues, feedback, or suggestions, please [open a new issue](https://gith
 ## License
 
 The scripts and documentation in this project are released under the [MIT License](https://github.com/marksowell/ssl-labs-screenshot-js/blob/main/LICENSE)
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarksowell%2Fssl-labs-screenshot-js.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarksowell%2Fssl-labs-screenshot-js?ref=badge_large)
