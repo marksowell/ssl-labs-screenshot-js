@@ -33,6 +33,6 @@
   "dependencies": {
     "node-fetch": "^3.3.2",
     "ora": "^7.0.1",
-    "puppeteer": "^21.1.0"
+    "puppeteer": "^24.2.0"
   }
 }
