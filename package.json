@@ -1,10 +1,11 @@
 {
   "name": "ssl-labs-screenshot",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "description": "Capture a trimmed screenshot of the SSL Labs report for a given domain",
   "main": "index.js",
   "scripts": {
+    "postinstall": "puppeteer install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node cli.js"
   },
