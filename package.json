@@ -1,6 +1,6 @@
 {
   "name": "ssl-labs-screenshot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "Capture a trimmed screenshot of the SSL Labs report for a given domain",
   "main": "index.js",
@@ -33,6 +33,6 @@
   "dependencies": {
     "node-fetch": "^3.3.2",
     "ora": "^7.0.1",
-    "puppeteer": "^21.1.0"
+    "puppeteer": "^24.4.0"
   }
 }
