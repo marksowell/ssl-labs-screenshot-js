@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 5 * * 1'  # Every Monday at 5am UTC
   workflow_dispatch:
+  push:
+    branches:
+      - ci-test
 
 jobs:
   test:
