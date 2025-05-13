@@ -34,7 +34,8 @@ export async function captureSSLLabsScreenshot(inputDomain) {
 
     const sslLabsUrl = `https://www.ssllabs.com/ssltest/analyze.html?d=${domain}&hideResults=on`;
     const browser = await puppeteer.launch({
-        headless: 'new' // Opting into the new headless mode
+        headless: 'new', // Opting into the new headless mode
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
     const page = await browser.newPage();
 
