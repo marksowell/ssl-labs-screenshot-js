@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { captureSSLLabsScreenshot } from './index.js';
 
-const version = "1.0.3";
+const version = "1.0.5";
 
 const domain = process.argv[2];
 if (!domain) {
