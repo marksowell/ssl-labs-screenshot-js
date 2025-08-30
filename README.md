@@ -6,7 +6,7 @@
 
 Capture a trimmed screenshot of the SSL Labs report for a given domain.
 
-<p align="center"><img src="https://raw.githubusercontent.com/marksowell/ssl-labs-screenshot-js/main/images/www.ssllabs.com_report.png" width="300px" />
+<p align="center"><img src="https://raw.githubusercontent.com/marksowell/ssl-labs-screenshot-js/main/images/ssllabs.com_report.png" width="300px" />
 
 ## Requirements
 
@@ -59,7 +59,7 @@ captureSSLLabsScreenshot('ssllabs.com');
 
 ```bash
 ✔ Overall rating: A
-✔ Screenshot saved as www.ssllabs.com_report.png
+✔ Screenshot saved as ssllabs.com_report.png
 ```
 
 ## Issues and Feedback
