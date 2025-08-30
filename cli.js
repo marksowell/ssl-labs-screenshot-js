@@ -1,4 +1,10 @@
 #!/usr/bin/env node
+import os from 'os';
+import path from 'path';
+
+// Ensure Puppeteer uses global user cache
+process.env.PUPPETEER_CACHE_DIR = path.join(os.homedir(), '.cache', 'puppeteer');
+
 import { captureSSLLabsScreenshot } from './index.js';
 
 const version = "1.0.3";
