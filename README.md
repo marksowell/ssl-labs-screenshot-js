@@ -34,10 +34,10 @@ npm install ssl-labs-screenshot
 After installing the package globally, you can use the `ssl-labs-screenshot` command:
 
 ```bash
-ssl-labs-screenshot example.com
+ssl-labs-screenshot ssllabs.com
 ```
 
-This will generate a screenshot named `example.com_report.png` in the current directory.
+This will generate a screenshot named `ssllabs.com_report.png` in the current directory.
 
 ### In Your Project
 
@@ -45,7 +45,7 @@ You can also use the `captureSSLLabsScreenshot` function in your project:
 
 ```javascript
 import { captureSSLLabsScreenshot } from 'ssl-labs-screenshot';
-captureSSLLabsScreenshot('example.com');
+captureSSLLabsScreenshot('ssllabs.com');
 ```
 
 ## Features

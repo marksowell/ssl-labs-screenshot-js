@@ -1,3 +1,8 @@
+import os from 'os';
+import path from 'path';
+
+process.env.PUPPETEER_CACHE_DIR = path.join(os.homedir(), '.cache', 'puppeteer');
+
 import puppeteer from 'puppeteer';
 import fs from 'fs';
 import fetch from 'node-fetch';
