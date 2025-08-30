@@ -1,6 +1,5 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
-import fetch from 'node-fetch';
 import ora from 'ora';
 
 function sanitizeAndValidateDomain(url) {
