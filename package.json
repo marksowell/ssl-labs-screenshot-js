@@ -1,6 +1,6 @@
 {
   "name": "ssl-labs-screenshot",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "type": "module",
   "description": "Capture a trimmed screenshot of the SSL Labs report for a given domain",
   "main": "index.js",
