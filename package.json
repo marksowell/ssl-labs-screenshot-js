@@ -33,6 +33,6 @@
   "homepage": "https://github.com/marksowell/ssl-labs-screenshot-js#readme",
   "dependencies": {
     "ora": "^7.0.1",
-    "puppeteer": "^24.19.0"
+    "puppeteer": "^24.25.0"
   }
 }
